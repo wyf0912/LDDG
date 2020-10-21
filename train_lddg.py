@@ -164,7 +164,7 @@ def train_net(args):
             U, S_spinal, V = torch.svd(feature[0:2000])
             low_rank_loss_spinal = S_spinal[2]
 
-            total_loss_spin = loss_spinal_cord + loss_kl_spinal * args.kl_weight * 2 + low_rank_loss_spinal * args.low_rank_tradeoff  # loss spinal多算了一次kl...要不要
+            total_loss_spin = loss_spinal_cord + loss_kl_spinal * args.kl_weight * 2 + low_rank_loss_spinal * args.low_rank_tradeoff 
             optimizer_spinal_cord.zero_grad()
             total_loss_spin.backward()
             optimizer_spinal_cord.step()
