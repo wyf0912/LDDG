@@ -6,7 +6,8 @@ The pre-print paper can be found in [Arxiv](https://arxiv.org/pdf/2009.12829.pdf
 ```
 python3 train_lddg.py
 ```
-
+## Segmentation Reuslts
+![image](./20201018_204019.jpg)
 
 ## Please cite our paper if you find it's useful.
 - @article{li2020domain,
