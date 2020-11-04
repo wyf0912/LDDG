@@ -3,9 +3,16 @@ The code release of paper 'Domain Generalization for Medical Imaging Classificat
 The pre-print paper can be found in [Arxiv](https://arxiv.org/pdf/2009.12829.pdf).
 
 ## How to use
+First, you need to install the package of surface-distance https://github.com/deepmind/surface-distanceand SimpleITK
 ```
-python3 train_lddg.py
+pip install SimpleITK
 ```
+Then run to train and evaluate the performance of the model
+```
+python3 train_lddg.py -t i
+```
+where i means set_i is the target domain.
+
 ## Segmentation Reuslts
 ![image](./20201018_204019.jpg)
 
